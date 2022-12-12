@@ -12,7 +12,7 @@
 }
 
 #rectangle {
-  position: absolute;
+  /* position: absolute; */
   width: 143px;
   height: 51px;
   left: 246px;
@@ -22,7 +22,7 @@
 }
 
 #contact {
-  position: absolute;
+  /* position: absolute; */
   width: 121px;
   height: 29px;
   margin-top: 26px;
@@ -48,11 +48,12 @@
 }
 
 h1 {
-  position: absolute;
+  /* position: absolute; */
   width: 170px;
   height: 58px;
-  left: calc(50% - 170px / 2 - 352px);
-  top: 111px;
+  /* left: calc(50% - 170px / 2 - 352px);
+  top: 111px; */
+  margin-top: 31px;
 
   font-family: "Zilla Slab";
   font-style: normal;
@@ -68,11 +69,11 @@ h1 {
 }
 
 p {
-  position: absolute;
+  /* position: absolute; */
   width: 490px;
   height: 29px;
-  left: calc(50% - 490px / 2 - 192px);
-  top: 181px;
+  /* left: calc(50% - 490px / 2 - 192px);
+  top: 181px; */
 
   /* body-p-desktop */
 
@@ -92,14 +93,16 @@ footer {
   width: 100%;
   height: 90px;
   background-color: #1c355e;
+
+  padding-top: 32px;
 }
 
 footer p {
-  position: relative;
-  height: 29px;
-  left: 469px;
-  right: 468px;
-  top: 32px;
+  /* position: relative; */
+  /* height: 29px; */
+  /* left: 469px;
+  right: 468px; */
+  /* top: 32px; */
 
   /* large-body-desktop */
 
@@ -108,6 +111,7 @@ footer p {
   font-weight: 400;
   font-size: 17.6px;
   line-height: 28px;
+
   /* identical to box height, or 160% */
 
   text-align: center;
@@ -115,4 +119,8 @@ footer p {
   /* White */
 
   color: #ffffff;
+}
+
+.navbox {
+  margin-top: 24;
 }

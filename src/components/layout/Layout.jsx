@@ -1,38 +1,53 @@
 import phone from "../../assets/icons/phone.png";
 import classes from "./Layout.module.css";
+import MainNavigation from "./MainNavigation";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 function Layout(props) {
   return (
     <div>
       <header>
-        <div className="container text-center">
-          <div className="row">
-            <div className="col">
-              <div>
-                <div id={classes.rectangle}></div>
-              </div>
-            </div>
-            <div className="col">
+        <Container>
+          <Row className="justify-content-center">
+            <Col md="4">
+              <div className="px-0" id={classes.rectangle}></div>
+            </Col>
+            <Col md="4" className="text-end">
               <img src={phone} alt="phone" id={classes.phone} />
               <span id={classes.contact}>123-234-5678</span>
-            </div>
-          </div>
-        </div>
+            </Col>
+          </Row>
+        </Container>
         <div id={classes.line1} />
-        <div className="container col-md-12">
-          <h1>Events</h1>
-          <p>Learn more about our 2022 Hellocare Advantage Plans.</p>
-        </div>
+        <Container>
+          <Row className="justify-content-center">
+            <Col md="8">
+              <h1>Events</h1>
+              <p>Learn more about our 2022 Hellocare Advantage Plans.</p>
+            </Col>
+          </Row>
+        </Container>
       </header>
-
+      <nav>
+        <Container>
+          <Row className="justify-content-center">
+            <Col md="8" className={classes.navbox}>
+              <MainNavigation />
+            </Col>
+          </Row>
+        </Container>
+      </nav>
+      {props.children}
       <footer className="footer">
-        <div className="row">
-          <div className="col-lg-12">
-            <p className="m-0 text-center">
-              © 2020 Diamond Health Plan. All rights reserved.
-            </p>
-          </div>
-        </div>
+        <Container>
+          <Row className="justify-content-center">
+            <Col md="5">
+              <p>© 2020 Diamond Health Plan. All rights reserved.</p>
+            </Col>
+          </Row>
+        </Container>
       </footer>
     </div>
   );
