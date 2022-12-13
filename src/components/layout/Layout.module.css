@@ -1,21 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 @import url("https://fonts.googleapis.com/css?family=Zilla+Slab:wght@500");
 
-#line1 {
-  height: 0px;
-  left: 0px;
-  top: 80px;
-
-  /* Light gray - stroke */
-
-  border: 1px solid #eaeaea;
+.containerHeader {
+  border-bottom: 1px solid #eaeaea;
 }
 
 #rectangle {
   /* position: absolute; */
   width: 143px;
   height: 51px;
-  left: 246px;
+  /* left: 246px; */
   margin-top: 14px;
 
   background-color: #208b82;

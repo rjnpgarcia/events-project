@@ -6,7 +6,6 @@ import { useState } from "react";
 function MainNavigation(props) {
   const [active, setActive] = useState("/");
   const navLinkStyles = ({ isActive }) => {
-    const style = "color";
     return {
       borderBottom: isActive ? "3px solid #00857A" : "",
       color: "#333333",

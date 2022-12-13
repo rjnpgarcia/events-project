@@ -1,4 +1,4 @@
-import phone from "../../assets/icons/phone.png";
+import phone from "../../icons/phone.png";
 import classes from "./Layout.module.css";
 import MainNavigation from "./MainNavigation";
 import Container from "react-bootstrap/Container";
@@ -9,21 +9,20 @@ function Layout(props) {
   return (
     <div>
       <header>
-        <Container>
+        <Container className={classes.containerHeader}>
           <Row className="justify-content-center">
-            <Col md="4">
+            <Col lg="4">
               <div className="px-0" id={classes.rectangle}></div>
             </Col>
-            <Col md="4" className="text-end">
+            <Col lg="4" className="text-end">
               <img src={phone} alt="phone" id={classes.phone} />
               <span id={classes.contact}>123-234-5678</span>
             </Col>
           </Row>
         </Container>
-        <div id={classes.line1} />
         <Container>
           <Row className="justify-content-center">
-            <Col md="8">
+            <Col lg="8">
               <h1>Events</h1>
               <p>Learn more about our 2022 Hellocare Advantage Plans.</p>
             </Col>
@@ -33,7 +32,7 @@ function Layout(props) {
       <nav>
         <Container>
           <Row className="justify-content-center">
-            <Col md="8" className={classes.navbox}>
+            <Col lg="8" className={classes.navbox}>
               <MainNavigation />
             </Col>
           </Row>
