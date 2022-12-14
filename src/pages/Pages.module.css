@@ -1,0 +1,22 @@
+.containerDates {
+  margin-top: 32px;
+}
+
+.containerEvents {
+  margin-top: 33px;
+  padding: 0px;
+}
+
+.colWalkin {
+  padding: 0px;
+  padding-top: 3px;
+  width: 330px;
+  height: 343px;
+}
+
+.colFeatured {
+  width: 529px;
+  height: 313px;
+  padding-left: 0px;
+  margin-left: 11px;
+}

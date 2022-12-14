@@ -76,162 +76,23 @@ export default class MultiSlider extends Component {
     return (
       <div>
         <Slider {...settings}>
-          <div>
-            <button
-              className={
-                this.state.activeSlide === 0
-                  ? classes.buttonDateActive
-                  : classes.buttonDate
-              }
-            >
-              OCT
-              <br />
-              2022
-            </button>
-          </div>
-          <div>
-            <button
-              className={
-                this.state.activeSlide === 1
-                  ? classes.buttonDateActive
-                  : classes.buttonDate
-              }
-            >
-              NOV
-              <br />
-              2022
-            </button>
-          </div>
-          <div>
-            <button
-              className={
-                this.state.activeSlide === 2
-                  ? classes.buttonDateActive
-                  : classes.buttonDate
-              }
-            >
-              DEC
-              <br />
-              2022
-            </button>
-          </div>
-          <div>
-            <button
-              className={
-                this.state.activeSlide === 3
-                  ? classes.buttonDateActive
-                  : classes.buttonDate
-              }
-            >
-              JAN
-              <br />
-              2023
-            </button>
-          </div>
-          <div>
-            <button
-              className={
-                this.state.activeSlide === 4
-                  ? classes.buttonDateActive
-                  : classes.buttonDate
-              }
-            >
-              FEB
-              <br />
-              2023
-            </button>
-          </div>
-          <div>
-            <button
-              className={
-                this.state.activeSlide === 5
-                  ? classes.buttonDateActive
-                  : classes.buttonDate
-              }
-            >
-              MAR
-              <br />
-              2023
-            </button>
-          </div>
-          <div>
-            <button
-              className={
-                this.state.activeSlide === 6
-                  ? classes.buttonDateActive
-                  : classes.buttonDate
-              }
-            >
-              APR
-              <br />
-              2023
-            </button>
-          </div>
-          <div>
-            <button
-              className={
-                this.state.activeSlide === 7
-                  ? classes.buttonDateActive
-                  : classes.buttonDate
-              }
-            >
-              MAY
-              <br />
-              2023
-            </button>
-          </div>
-          <div>
-            <button
-              className={
-                this.state.activeSlide === 8
-                  ? classes.buttonDateActive
-                  : classes.buttonDate
-              }
-            >
-              JUN
-              <br />
-              2023
-            </button>
-          </div>
-          <div>
-            <button
-              className={
-                this.state.activeSlide === 9
-                  ? classes.buttonDateActive
-                  : classes.buttonDate
-              }
-            >
-              JUL
-              <br />
-              2023
-            </button>
-          </div>
-          <div>
-            <button
-              className={
-                this.state.activeSlide === 10
-                  ? classes.buttonDateActive
-                  : classes.buttonDate
-              }
-            >
-              AUG
-              <br />
-              2023
-            </button>
-          </div>
-          <div>
-            <button
-              className={
-                this.state.activeSlide === 11
-                  ? classes.buttonDateActive
-                  : classes.buttonDate
-              }
-            >
-              SEP
-              <br />
-              2023
-            </button>
-          </div>
+          {this.props.data.map((button) => {
+            return (
+              <div>
+                <button
+                  className={
+                    this.state.activeSlide === button.id
+                      ? classes.buttonDateActive
+                      : classes.buttonDate
+                  }
+                >
+                  {button.month}
+                  <br />
+                  {button.year}
+                </button>
+              </div>
+            );
+          })}
         </Slider>
       </div>
     );
