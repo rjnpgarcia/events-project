@@ -64,7 +64,6 @@ export default class MultiSlider extends Component {
   render() {
     const settings = {
       focusOnSelect: true,
-      dots: false,
       infinite: true,
       slidesToShow: slidesToShow,
       slidesToScroll: 1,
@@ -80,6 +79,7 @@ export default class MultiSlider extends Component {
             return (
               <div>
                 <button
+                  key={button.id}
                   className={
                     this.state.activeSlide === button.id
                       ? classes.buttonDateActive

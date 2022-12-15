@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Zilla+Slab");
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined");
+
 * {
   box-sizing: border-box;
 }
@@ -11,9 +15,9 @@ body {
   background: #ffffff;
 }
 .slick-dots li button:before {
-  color: #7fbcb7;
-  font-size: 14px;
-  padding-top: 1px;
+  color: transparent;
+  /* font-size: 14px;
+  padding-top: 1px; */
 }
 
 .slick-dots li.slick-active button:before {
@@ -27,4 +31,48 @@ body {
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
+  font-size: 14px;
+  padding-top: 1px;
 }
+
+.slick-dots li button {
+  background-color: #7fbcb7;
+  font-size: 0px;
+  height: 12px;
+  width: 12px;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  color: #7fbcb7;
+}
+
+.slick-dots li.slick-active button {
+  align-items: center;
+  height: 20px;
+  width: 20px;
+  background-color: #007a70 !important;
+  color: #7fbcb7;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.slick-dots li {
+  width: auto;
+  margin-right: 12px;
+  margin-left: 12px;
+}
+
+div.slick-dots {
+  bottom: 0px;
+}
+
+/* button.slick-arrow.slick-next {
+  color: white;
+  background-color: #007a70;
+  right: 10px;
+} */

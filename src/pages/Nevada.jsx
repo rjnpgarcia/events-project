@@ -16,6 +16,7 @@ function NevadaPage() {
       city: "WEST PALM BEACH, FLORIDA 33406",
       when: "Sat, October 5, 2022, 8:00am",
       when2: "Sat, October 5, 2022, 11:00am",
+      featured: false,
       walkIn: false,
     },
     {
@@ -25,6 +26,7 @@ function NevadaPage() {
       address: "Prominence Health Plan MA 1510 Meadow Wood Lane",
       city: "RENO, NEVADA 89502",
       when: "Sun, October 6, 2022, 8:00am",
+      featured: true,
       walkIn: false,
     },
     {
@@ -34,6 +36,7 @@ function NevadaPage() {
       address: "Prominence Health Plan MA 1510 Meadow Wood Lane",
       city: "RENO, NEVADA 89502",
       when: "Sun, October 6, 2022, 11:00am",
+      featured: true,
       walkIn: false,
     },
     {
@@ -44,6 +47,7 @@ function NevadaPage() {
       city: "WEST PALM BEACH, FLORIDA 33406",
       when: "Mon, October 7, 2022, 8:00am",
       when2: "Mon, October 7, 2022, 11:00am",
+      featured: true,
       walkIn: false,
     },
     {
@@ -53,6 +57,7 @@ function NevadaPage() {
       address: "Prominence Health Plan MA 1510 Meadow Wood Lane",
       city: "RENO, NEVADA 89502",
       when: "Tue, October 8, 2022, 8:00am",
+      featured: false,
       walkIn: true,
     },
     {
@@ -62,15 +67,17 @@ function NevadaPage() {
       address: "Prominence Health Plan Office 1155 South Congress Avenue",
       city: "WEST PALM BEACH, FLORIDA 33406",
       when: "Fri, October 11, 2022, 8:00am",
+      featured: false,
       walkIn: true,
     },
     {
       id: 7,
-      day: "15",
+      day: "13",
       title: "Special Seminar",
       address: "Prominence Health Plan MA 1510 Meadow Wood Lane",
       city: "RENO, NEVADA 89502",
-      when: "Tue, October 15, 2022, 8:00am",
+      when: "Tue, October 13, 2022, 8:00am",
+      featured: false,
       walkIn: true,
     },
     {
@@ -80,6 +87,7 @@ function NevadaPage() {
       address: "Prominence Health Plan Office 1155 South Congress Avenue",
       city: "WEST PALM BEACH, FLORIDA 33406",
       when: "Wed, October 15, 2022, 8:00am",
+      featured: true,
       walkIn: true,
     },
     {
@@ -89,6 +97,7 @@ function NevadaPage() {
       address: "Prominence Health Plan Office 1155 South Congress Avenue",
       city: "WEST PALM BEACH, FLORIDA 33406",
       when: "Sat, October 25, 2022, 10:00am",
+      featured: false,
       walkIn: true,
     },
     {
@@ -98,6 +107,7 @@ function NevadaPage() {
       address: "Prominence Health Plan MA 1510 Meadow Wood Lane",
       city: "RENO, NEVADA 89502",
       when: "Thu, October 30, 2022, 8:00am",
+      featured: false,
       walkIn: true,
     },
   ];
@@ -110,7 +120,8 @@ function NevadaPage() {
             <Container className={classes.containerEvents}>
               <Row>
                 <Col md="8" className={classes.colFeatured}>
-                  <Featured />
+                  <h4>Featured Events</h4>
+                  <Featured contents={nevadaDummyData} />
                 </Col>
                 <Col md="4" className={classes.colWalkin}>
                   <WalkIn />

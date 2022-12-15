@@ -1,10 +1,85 @@
-h4 {
-  width: 188px;
-  height: 29px;
+ul {
+  padding: 0;
+  margin-bottom: 0px;
+}
+
+.sliderContainer {
+  width: 529px;
+  height: 313px;
+  border: 1px solid #eaeaea;
+  border-radius: 6px;
+  display: grid;
+  align-content: space-between;
+}
+
+.buttonRegister {
+  background: #00857a;
+  border-radius: 6px;
+  width: 154px;
+  height: 43px;
+  border: 0px;
+  margin-top: 16px;
+
+  /* text */
   font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.listTitle {
+  height: 54px;
+  font-family: "Zilla Slab";
   font-style: normal;
   font-weight: 700;
   font-size: 22px;
-  line-height: 29px;
-  color: #00857a;
+  line-height: 27px;
+
+  color: #1c355e;
+}
+
+.listAddress {
+  height: 60px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 5px;
+
+  color: #333333;
+}
+
+.listWhen {
+  height: 21px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: 16px;
+
+  color: #333333;
+}
+
+.listDate {
+  height: 54px;
+  width: 51px;
+  font-family: "Zilla Slab";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+
+  color: #1c355e;
+}
+
+.calendarIcon {
+  font-weight: 100;
+  font-size: 14px;
+  line-height: 18px;
+  color: #333333;
 }
