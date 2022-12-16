@@ -119,12 +119,13 @@ function NevadaPage() {
             <Dates />
             <Container className={classes.containerEvents}>
               <Row>
-                <Col md="8" className={classes.colFeatured}>
+                <Col md="7" className={classes.colFeatured}>
                   <h4>Featured Events</h4>
                   <Featured contents={nevadaDummyData} />
                 </Col>
-                <Col md="4" className={classes.colWalkin}>
-                  <WalkIn />
+                <Col md="3" className={classes.colWalkin}>
+                  <h5>Walk-in Events</h5>
+                  <WalkIn contents={nevadaDummyData} />
                 </Col>
               </Row>
             </Container>

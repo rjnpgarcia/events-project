@@ -71,8 +71,10 @@ div.slick-dots {
   bottom: 0px;
 }
 
-/* button.slick-arrow.slick-next {
-  color: white;
-  background-color: #007a70;
-  right: 10px;
-} */
+.slick-prev {
+  z-index: 9999;
+}
+
+div.slick-arrow.slick-next::before {
+  color: transparent;
+}

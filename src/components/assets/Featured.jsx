@@ -86,7 +86,7 @@ export default class Featured extends Component {
             return (
               <div className="row d-flex justify-content-center mt-3">
                 <div className="col-8 m-0">
-                  <ul>
+                  <ul key={content.id}>
                     <li key={content.id} className={classes.listTitle}>
                       {content.title}
                     </li>
@@ -94,7 +94,10 @@ export default class Featured extends Component {
                       {content.address} {content.city}
                     </li>
                     <li key={content.id} className={classes.listWhen}>
-                      <CalendarMonthIcon className={classes.calendarIcon} />{" "}
+                      <CalendarMonthIcon
+                        key={content.id}
+                        className={classes.calendarIcon}
+                      />{" "}
                       {content.when}
                     </li>
                     <button className={classes.buttonRegister}>

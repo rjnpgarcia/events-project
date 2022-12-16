@@ -1,10 +1,91 @@
-h5 {
-  width: 117px;
-  height: 24.24px;
-  font-family: "Montserrat";
+.containerSlider {
+  width: 330px;
+  height: 263px;
+  background: #ffffff;
+  border: 1px solid #eaeaea;
+  box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+}
+
+.title {
+  height: 27px;
+  font-family: "Zilla Slab";
   font-style: normal;
   font-weight: 700;
-  font-size: 14.8757px;
-  line-height: 24px;
-  color: #00857a;
+  font-size: 18px;
+  line-height: 27px;
+  color: #1c355e;
+}
+
+.address {
+  height: 40px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333333;
+}
+
+.date {
+  height: 21px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  padding-top: 6px;
+}
+
+.calendarIcon {
+  font-weight: 100;
+  font-size: 15px;
+  line-height: 18px;
+  color: #333333;
+  text-align: start;
+}
+
+.day {
+  height: 54px;
+  width: 29px;
+  font-family: "Zilla Slab";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  color: #1c355e;
+}
+
+.row1 {
+  padding-top: 18px;
+  padding-left: 22px;
+  padding-right: 17px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.row2 {
+  padding-top: 18px;
+  padding-left: 22px;
+  padding-right: 17px;
+  padding-bottom: 20px;
+}
+
+.column {
+  padding: 0px;
+}
+
+.borderLine {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.line {
+  margin: 0px;
+  width: 282px;
+  height: 1px;
+  margin-top: 20px;
 }
