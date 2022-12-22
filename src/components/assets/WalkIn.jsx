@@ -2,6 +2,8 @@
 import React from "react";
 // CSS and Icons
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
+import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
+import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import classes from "./WalkIn.module.css";
 import "./WalkInSlider.module.css";
 // React-Bootstrap
@@ -88,18 +90,22 @@ function WalkIn(props) {
           }
         })}
       </Swiper>
-      <div className="container">
+      <div className={classes.containerWalkInButtons}>
         <div className="row">
-          <div className="col-6 d-flex justify-content-end">
+          <div className="col-6 d-flex justify-content-end px-0">
             <div className="button-prev-slide">
-              <button>left</button>
-              <button>prev</button>
+              <button className={classes.navButtonSmall}>
+                <ChevronLeftIcon />
+              </button>
+              <button className={classes.navButtonBig}>Prev</button>
             </div>
           </div>
-          <div className="col-6">
+          <div className="col-6 px-0">
             <div className="button-next-slide">
-              <button>right</button>
-              <button>next</button>
+              <button className={classes.navButtonBig}>Next</button>
+              <button className={classes.navButtonSmall}>
+                <ChevronRightIcon />
+              </button>
             </div>
           </div>
         </div>

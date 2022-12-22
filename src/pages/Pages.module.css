@@ -5,6 +5,8 @@
 .containerEvents {
   margin-top: 33px;
   padding: 0px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #333333;
 }
 
 .colWalkin {

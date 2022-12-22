@@ -129,7 +129,6 @@ function NevadaPage() {
                 </Col>
               </Row>
             </Container>
-            Nevada
           </Col>
         </Row>
       </Container>
