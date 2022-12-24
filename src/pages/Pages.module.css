@@ -14,7 +14,7 @@
   padding-top: 3px;
   width: 330px;
   height: 343px;
-  margin-left: 24px;
+  margin-left: 12px;
 }
 
 .colFeatured {
@@ -42,4 +42,10 @@ h5 {
   font-size: 14.8757px;
   line-height: 24px;
   color: #00857a;
+}
+
+.containerSeminar {
+  margin-top: 32px;
+  padding: 0px;
+  justify-content: center;
 }

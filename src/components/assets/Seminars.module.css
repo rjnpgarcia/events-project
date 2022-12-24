@@ -1,0 +1,72 @@
+.rowSeminars {
+  margin: auto;
+  margin-bottom: 14px;
+  /* width: 866px; */
+  height: 140px;
+  background: #ffffff;
+  border: 1px solid #eaeaea;
+  border-radius: 6px;
+  align-content: center;
+}
+
+.btnRegister {
+  display: block;
+  background: #00857a;
+  border-radius: 6px;
+  width: 154px;
+  height: 43px;
+  border: 0px;
+  margin: auto;
+
+  /* text */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.monthDay {
+  font-family: "Zilla Slab";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+
+  text-align: center;
+
+  color: #1c355e;
+}
+
+.title {
+  font-family: "Zilla Slab";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+
+  color: #1c355e;
+}
+
+.details {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+
+  color: #333333;
+}
+
+.details2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+
+  color: #333333;
+  margin-top: 7px;
+}

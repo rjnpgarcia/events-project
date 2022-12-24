@@ -5,6 +5,7 @@ import classes from "./Pages.module.css";
 import Dates from "../components/assets/Dates";
 import Featured from "../components/assets/Featured";
 import WalkIn from "../components/assets/WalkIn";
+import Seminars from "../components/assets/Seminars";
 
 function NevadaPage() {
   const nevadaDummyData = [
@@ -115,7 +116,7 @@ function NevadaPage() {
     <div>
       <Container className={classes.containerDates}>
         <Row className="justify-content-center">
-          <Col md="8">
+          <Col md="8" className="p-0">
             <Dates />
             <Container className={classes.containerEvents}>
               <Row>
@@ -128,6 +129,9 @@ function NevadaPage() {
                   <WalkIn contents={nevadaDummyData} />
                 </Col>
               </Row>
+            </Container>
+            <Container className={classes.containerSeminar}>
+              <Seminars />
             </Container>
           </Col>
         </Row>
