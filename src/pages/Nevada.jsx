@@ -23,7 +23,7 @@ function NevadaPage() {
     {
       id: 2,
       day: "6",
-      title: "My Seminar",
+      title: "Premium Seminar",
       address: "Prominence Health Plan MA 1510 Meadow Wood Lane",
       city: "RENO, NEVADA 89502",
       when: "Sun, October 6, 2022, 8:00am",
@@ -33,7 +33,7 @@ function NevadaPage() {
     {
       id: 3,
       day: "6",
-      title: "Other Seminar",
+      title: "VIP members benefits Seminar",
       address: "Prominence Health Plan MA 1510 Meadow Wood Lane",
       city: "RENO, NEVADA 89502",
       when: "Sun, October 6, 2022, 11:00am",
@@ -54,7 +54,7 @@ function NevadaPage() {
     {
       id: 5,
       day: "8",
-      title: "My Seminar",
+      title: "Advanced benefits Seminar",
       address: "Prominence Health Plan MA 1510 Meadow Wood Lane",
       city: "RENO, NEVADA 89502",
       when: "Tue, October 8, 2022, 8:00am",
@@ -64,7 +64,7 @@ function NevadaPage() {
     {
       id: 6,
       day: "11",
-      title: "Prospective Member Benefits",
+      title: "Prospective Members",
       address: "Prominence Health Plan Office 1155 South Congress Avenue",
       city: "WEST PALM BEACH, FLORIDA 33406",
       when: "Fri, October 11, 2022, 8:00am",
@@ -74,7 +74,7 @@ function NevadaPage() {
     {
       id: 7,
       day: "13",
-      title: "Special Seminar",
+      title: "Special Advanced Seminar",
       address: "Prominence Health Plan MA 1510 Meadow Wood Lane",
       city: "RENO, NEVADA 89502",
       when: "Tue, October 13, 2022, 8:00am",
@@ -84,7 +84,7 @@ function NevadaPage() {
     {
       id: 8,
       day: "16",
-      title: "Special Seminar",
+      title: "Hellocare Benefits Seminar",
       address: "Prominence Health Plan Office 1155 South Congress Avenue",
       city: "WEST PALM BEACH, FLORIDA 33406",
       when: "Wed, October 15, 2022, 8:00am",
@@ -94,7 +94,7 @@ function NevadaPage() {
     {
       id: 9,
       day: "25",
-      title: "Other Seminar",
+      title: "Hellocare Members Seminar",
       address: "Prominence Health Plan Office 1155 South Congress Avenue",
       city: "WEST PALM BEACH, FLORIDA 33406",
       when: "Sat, October 25, 2022, 10:00am",
@@ -131,7 +131,7 @@ function NevadaPage() {
               </Row>
             </Container>
             <Container className={classes.containerSeminar}>
-              <Seminars />
+              <Seminars contents={nevadaDummyData} />
             </Container>
           </Col>
         </Row>

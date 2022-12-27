@@ -18,6 +18,13 @@ import "swiper/css/grid";
 import "swiper/css/navigation";
 
 function WalkIn(props) {
+  const params = {
+    on: {
+      slideChange: (index) => {
+        console.log(index.snapIndex);
+      },
+    },
+  };
   return (
     <Container className={classes.containerSlider}>
       <Swiper
